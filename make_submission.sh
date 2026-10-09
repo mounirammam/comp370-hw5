@@ -4,7 +4,7 @@ set -euo pipefail
 cd "$(dirname "$0")"
 mkdir -p submission
 cp borough_complaints.py submission/complaint_borough.py
-cp complaint_type_analysis.md submission/
+cp complaint_type_analysis.md top_complaint_*.png conceptual_answers.md submission/
 # Bokeh.tgz: source code only (no data, no caches)
 tar -czf submission/Bokeh.tgz --exclude='data' --exclude='__pycache__' bokeh_dashboard/preprocess.py bokeh_dashboard/main.py
 tar -tzf submission/Bokeh.tgz
